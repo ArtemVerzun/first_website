@@ -1,0 +1,49 @@
+Имя	Rakhim
+Использует антивирус	false
+Антивирус	(unknown)
+Предпочтения по выбору	protection, price, web
+Комментарий	Мне норм без антивируса
+Файл	(unknown)
+
+Имя	Misha
+Использует антивирус	true
+Антивирус	kaspersy
+Предпочтения по выбору	protection, performance, price
+Комментарий	Все классно
+Файл	main.asm
+
+Имя	Рахим
+Использует антивирус	true
+Антивирус	other
+Предпочтения по выбору	protection, performance, price
+Комментарий	Windows Defender ловит все вирусы!)
+Файл	server.py
+
+Имя	Сергей
+Использует антивирус	false
+Антивирус	(unknown)
+Предпочтения по выбору	protection, performance, brand
+Комментарий	Можно прожить и без антивируса
+Файл	lab3script.js
+
+Имя	Евгений
+Использует антивирус	true
+Антивирус	kaspersy
+Предпочтения по выбору	protection, performance, price
+Комментарий	Касперский лучший!
+Файл	style.css
+
+Имя	Женя
+Использует антивирус	true
+Антивирус	avast
+Предпочтения по выбору	protection, price
+Комментарий	Все хорошо!
+Файл	.h2.server.properties
+
+Имя	Максим
+Использует антивирус	true
+Антивирус	kaspersy
+Предпочтения по выбору	performance, price, web
+Комментарий	Все хорошо
+Файл	.dbshell
+

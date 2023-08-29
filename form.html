@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Anti-virus</title>
+	<link rel="icon" type="image/x-icon" href="img/logo.png">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+	.main-content {
+		margin: auto;
+		width: 85%;
+	}
+</style>
+
+<script>
+
+function checkBoxLimit(){
+	var checkBoxGroup = document.getElementsByClassName("lm3");	
+	var limit = 3;
+	for (var i = 0; i < checkBoxGroup.length; i++) {
+		checkBoxGroup[i].onclick = function() {
+			var checkedcount = 0;
+			for (var i = 0; i < checkBoxGroup.length; i++) {
+				checkedcount += (checkBoxGroup[i].checked) ? 1 : 0;
+			}
+			if (checkedcount > limit) {
+				console.log("You can select maximum of " + limit + " checkboxes.");
+				alert("Вы можете выбрать только " + limit + " опции.");						
+				this.checked = false;
+			}
+		}
+		console.log(checkBoxGroup[i].onclick);
+	}
+}
+
+function useAntivirus(state) {
+	document.getElementById("selector").disabled = !state;
+}
+</script>
+
+<body>
+	<header>
+		<table class="table-nav">
+			<tr>
+				<td><img src="img/logo.png"></td>
+				<td width=50%><h2><a href="index.html">Антивирус</a></h2></td>
+				<td><h3><a href="form.html">Анкета</a></h3></td>
+				<td><h3><a href="lr3.html">ЛР3</a></h3></td>
+				<td><h3><a href="info.html">Основная информация</a></h3></td>
+				<td><h3><a href="antivirus-os.php">Антивирусы</a></h3></td>
+				<td><h3><a href="sources.html">Источники</a></h3></td>
+			</tr>
+			<tr height=5%></tr>
+		</table>
+	</header>
+	
+	<div class="spacer"></div>
+		<div class="main-content">
+			<div class="content-center">
+			<H2>Анкета пользователя</H2>
+			<HR>
+			<FORM name="form" method="POST" action="cgi-bin/lab5.py">
+				<TABLE align=center>
+					<TR>
+						<TH align=right>Имя:
+						<TD><input type=text name=name>
+					<TR>
+						<TH align=right>Используете ли вы антивирус:
+						<TD><input type=radio name=isUseAnti value=true onchange="useAntivirus(true)" checked>Да
+							<input type=radio name=isUseAnti value=false onchange="useAntivirus(false)">Нет
+					<TR>
+						<TH align=right>Какой антивирус вы используете:
+						<TD><select id="selector" name=antivirus >
+							<option value=kaspersy>Kaspersky
+							<option value=avast>Avast
+							<option value=eset>Eset
+							<option value=avg>AVG
+							<option value=drweb>Dr.Web
+							<option value=other>Другой
+						</select>
+					<TR>
+						<TH align=right>Что для вас является главным фактором в выборе антивируса (до 3):
+						<TD><table>
+						<tr>
+							<td><input class="lm3" type=checkbox name="preferences" value=protection>Защита системы
+							<td><input class="lm3" type=checkbox name="preferences" value=performance>Быстродействие системы
+							<td><input class="lm3" type=checkbox name="preferences" value=simple>Простота настройки
+						<tr>
+							<td><input class="lm3" type=checkbox name="preferences" value=price>Низкая цена
+							<td><input class="lm3" type=checkbox name="preferences" value=web>Веб защита
+							<td><input class="lm3" type=checkbox name="preferences" value=brand>Бренд
+						</table>
+					<TR>
+						<TH align=right>Комментарий по работе вашего антивируса:
+						<TD><textarea name=comment cols=30 rows=2 placeholder="Введите текст"></textarea>
+					<TR>
+						<TH align=right>Отправить файл на проверку:
+						<TD><input type=file name=file>
+					<TR>
+						<TD colspan=2 align=center>
+						<input type=submit value="ОТПРАВИТЬ">
+				</TABLE>
+			</FORM>
+			<script type="text/javascript">checkBoxLimit();</script>
+			<HR>
+			</div>
+		</div>
+	</div>
+	
+	<div class="spacer"></div>
+	<footer>
+		<table width=100%>
+			<tr>
+				<td align=center onclick="alert('Зинатов Р.Г. 4936')">Zinatov R.G.</td>
+				<td width=50%></td>
+				<td align=center>Group 4936</td>
+			</tr>
+		</table>
+	</footer>
+</body> 
+</html>

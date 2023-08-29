@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<!-- <!DOCTYPE data [
+<!ELEMENT data (anti)>
+<!ELEMENT anti (name, icon, license-img, license, scan, permanent, email, web)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT icon (#PCDATA)>
+<!ELEMENT license-img (#PCDATA)>
+<!ELEMENT license (#PCDATA)>
+<!ELEMENT scan (#PCDATA)>
+<!ELEMENT permanent (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT web (#PCDATA)>
+]> -->
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+	xsi:schemaLocation="schema.xsd">
+   <anti>
+     <name>Avast Free Antivirus</name>
+	 <icon>img/info/logos/avast-free-antivirus-logo.png</icon>
+     <license-img>img/info/free.png</license-img>
+     <license>Бесплатная</license>
+     <scan>Есть</scan>
+     <permanent>Есть</permanent>
+     <email>Есть</email>
+     <web>Есть</web>
+   </anti>
+   <anti>
+     <name>AVG Anti-Virus Free</name>
+	 <icon>img/info/logos/avg-anti-virus-free-logo.png</icon>
+     <license-img>img/info/free.png</license-img>
+	 <license>Бесплатная</license>
+     <scan>Есть</scan>
+     <permanent>Есть</permanent>
+     <email>Нет</email>
+     <web>Есть</web>
+   </anti>
+   <anti>
+     <name>Advanced SystemCare Ultimate</name>
+	 <icon>img/info/logos/advanced_systemcare_ultimate_-logo.png</icon>
+     <license-img>img/info/free.png</license-img>
+	 <license>Бесплатная</license>
+     <scan>Есть</scan>
+     <permanent>Есть</permanent>
+     <email>Нет</email>
+     <web>Нет</web>
+   </anti>
+   <anti>
+     <name>Panda Antivirus Pro</name>
+	 <icon>img/info/logos/panda_antivirus_pro.png</icon>
+     <license-img>img/info/money.png</license-img>
+	 <license>Платная</license>
+     <scan>Есть</scan>
+     <permanent>Есть</permanent>
+     <email>Нет</email>
+     <web>Нет</web>
+   </anti>
+   <anti>
+     <name>IObit Malware Fighter</name>
+	 <icon>img/info/logos/iobit_malware_fighter_-logo.png</icon>
+     <license-img>img/info/free.png</license-img>
+	 <license>Бесплатная</license>
+     <scan>Есть</scan>
+     <permanent>Есть</permanent>
+     <email>Нет</email>
+     <web>Есть</web>
+   </anti>
+   <anti>
+     <name>360 Total Security</name>
+	 <icon>img/info/logos/360-total-security-logo.png</icon>
+     <license-img>img/info/free.png</license-img>
+	 <license>Бесплатная</license>
+     <scan>Есть</scan>
+     <permanent>Есть</permanent>
+     <email>Нет</email>
+     <web>Есть</web>
+   </anti>
+   <anti>
+     <name>ESET NOD32 Smart Security</name>
+	 <icon>img/info/logos/eset-nod32-smart-security-logo.png</icon>
+     <license-img>img/info/money.png</license-img>
+	 <license>Платная</license>
+     <scan>Есть</scan>
+     <permanent>Есть</permanent>
+     <email>Есть</email>
+     <web>Есть</web>
+   </anti>
+   <anti>
+     <name>Antivirus Kaspersky Free</name>
+	 <icon>img/info/logos/antivirus-kaspersky-free-logo.png</icon>
+     <license-img>img/info/free.png</license-img>
+	 <license>Бесплатная</license>
+     <scan>Есть</scan>
+     <permanent>Есть</permanent>
+     <email>Есть</email>
+     <web>Есть</web>
+   </anti>
+   <anti>
+     <name>Microsoft Security Essentials</name>
+	 <icon>img/info/logos/microsoft_security_essentials_dlya_windows-logo.png</icon>
+     <license-img>img/info/free.png</license-img>
+	 <license>Бесплатная</license>
+     <scan>Есть</scan>
+     <permanent>Есть</permanent>
+     <email>Нет</email>
+     <web>Есть</web>
+   </anti>
+   <anti>
+     <name>Avira Free Antivirus</name>
+	 <icon>img/info/logos/avira-free-antivirus-logo.png</icon>
+     <license-img>img/info/free.png</license-img>
+	 <license>Бесплатная</license>
+     <scan>Есть</scan>
+     <permanent>Есть</permanent>
+     <email>Есть</email>
+     <web>Есть</web>
+   </anti>
+   <anti>
+     <name>Bitdefender Antivirus Free Edition</name>
+	 <icon>img/info/logos/bitdefender-antivirus-free-edition-logo.png</icon>
+     <license-img>img/info/money.png</license-img>
+	 <license>Платная</license>
+     <scan>Есть</scan>
+     <permanent>Есть</permanent>
+     <email>Нет</email>
+     <web>Есть</web>
+   </anti>
+   <anti>
+     <name>Comodo Antivirus</name>
+	 <icon>img/info/logos/comodo_antivirus_0.png</icon>
+     <license-img>img/info/money.png</license-img>
+	 <license>Бесплатная</license>
+     <scan>Есть</scan>
+     <permanent>Есть</permanent>
+     <email>Нет</email>
+     <web>Нет</web>
+   </anti>   
+   <anti>
+     <name>Dr.Web Antivirus</name>
+	 <icon>img/info/logos/avast-free-antivirus-logo.png</icon>
+     <license-img>img/info/money.png</license-img>
+	 <license>Платная</license>
+     <scan>Есть</scan>
+     <permanent>Есть</permanent>
+     <email>Нет</email>
+     <web>Нет</web>
+   </anti>
+   <anti>
+     <name>AdwCleaner</name>
+	 <icon>img/info/logos/adwcleaner-logo.png</icon>
+     <license-img>img/info/money.png</license-img>
+	 <license>Платная</license>
+     <scan>Есть</scan>
+     <permanent>Нет</permanent>
+     <email>Нет</email>
+     <web>Нет</web>
+   </anti>
+</data>

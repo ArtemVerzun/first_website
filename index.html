@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Anti-virus</title>
+	<link rel="icon" type="image/x-icon" href="img/logo.png">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+	.main-content {
+		margin: auto;
+		width: 85%;
+	}
+</style>
+
+<script>
+	var data = [
+		["https://www.kaspersky.ru", "img/home/kaspersky.jpg","Kaspersky"],
+		["https://www.avast.com", "img/home/avast.png","Avast"],
+		["https://www.avg.com", "img/home/avg.jpg","AVG"],
+		["https://www.drweb.ru", "img/home/drweb.jpg","Dr.Web"],
+		["https://www.esetnod32.ru", "img/home/eset.jpg","ESET"]
+		]
+	var index = 0;
+	
+	function next()
+	{ 
+		var link = document.getElementById("link");
+		var img = document.getElementsByName("img")[0];
+		var text = document.getElementsByName("slide-text")[0];
+		if (index < data.length-1)
+			index++;
+		else
+			index = 0;
+		link.href = data[index][0];
+		img.src = data[index][1];
+		text.innerHTML = data[index][2];
+	}
+	
+	var timerId = 0;
+	let mover = function() { timerId = setInterval(next, 2000) };
+	let mout = function() { clearInterval(timerId); };
+
+</script>
+
+<body>
+	<header>
+		<table class="table-nav">
+			<tr>
+				<td><img src="img/logo.png"></td>
+				<td width=50%><h2><a href="index.html">Антивирус</a></h2></td>
+				<td><h3><a href="form.html">Анкета</a></h3></td>
+				<td><h3><a href="lr3.html">ЛР3</a></h3></td>
+				<td><h3><a href="info.html">Основная информация</a></h3></td>
+				<td><h3><a href="antivirus-os.php">Антивирусы</a></h3></td>
+				<td><h3><a href="sources.html">Источники</a></h3></td>
+			</tr>
+			<tr height=5%></tr>
+		</table>
+	</header>
+	<div class="spacer"></div>
+	<div class="main-content">
+		<div class="content-center">
+			<table align=center>
+				<tr>
+					<td align=center>
+					<div class="holder">
+						<a href=info.html#history><img src="img/home/history.jpg" width=300px height=300px></a>
+						<div class="hidden-text">
+							<h3>История антивирусов</h3>
+						</div>
+					</div>
+					</td>
+					<td width=10%></td>
+					<td align=center>
+					<div class="holder">
+						<a href=info.html#viruses><img src="img/home/virus.jpg" width=300px height=300px></a>
+						<div class="hidden-text">
+							<h3>Виды вирусов</h3>
+						</div>
+					</div>
+					</td>
+				</tr>
+				<tr>
+					<td align=center>
+					<div class="holder">
+						<a href=info.html#security><img src="img/home/security.png" width=300px height=300px></a>
+						<div class="hidden-text">
+							<h3>Методы борьбы с вирусами</h3>
+						</div>
+					</div>
+					</td>
+					<td width=10%></td>
+					<td align=center>
+					<div class="holder">
+						<a href=info.html#classes><img src="img/home/classes.jpeg" width=300px height=300px></a>
+						<div class="hidden-text">
+							<h3>Виды антивирусов</h3>
+						</div>
+					</div>
+					</td>
+				</tr>
+				<tr>
+					<td align=center>
+					<div class="holder">
+						<a href=info.html#efficiency><img src="img/home/efficiency.jpg" width=300px height=300px></a>
+						<div class="hidden-text">
+							<h3>Эффективность антивирусов</h3>
+						</div>
+					</div>
+					</td>
+					<td width=10%></td>
+					<td align=center>
+					<div class="holder">
+						<a href=info.html#rate><img src="img/home/rate.png" width=300px height=300px></a>
+						<div class="hidden-text">
+							<h3>Рейтинг антивирусов</h3>
+						</div>
+					</div>
+					</td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+			<h3 align="center">Популярные антивирусы</h3>
+			<div class="slides" onmouseover="mover()" onmouseout="mout()">
+				<a align="center" id="link" href="https://www.kaspersky.ru">
+					<img name="img" src="img/home/kaspersky.jpg" width="400px" height="250px" alt="img">
+				</a>
+				<h3 align="center" name="slide-text">Kaspersky</h3>
+			</div>
+		</div>
+	</div>
+
+	<div class="spacer"></div>
+	<footer>
+		<table width=100%>
+			<tr>
+				<td align=center onclick="alert('Зинатов Р.Г. 4936')">Zinatov R.G.</td>
+				<td width=50%></td>
+				<td align=center>Group 4936</td>
+			</tr>
+		</table>
+	</footer>
+</body> 
+</html>

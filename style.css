@@ -1,0 +1,171 @@
+#header {
+	margin: auto;
+}
+
+.sidebar {
+	float: left;
+}
+
+.content-right {
+	float: right;
+}
+
+.content-center {
+	margin: auto;
+	width: 85%;
+}
+
+.footer {
+	width: 100%;
+}
+
+.up-button {
+	position: fixed;
+	left: 95%;
+	bottom: 5%;
+	height: 10mm;
+	width: 10mm;
+	background: silver;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+}
+
+#up-button {
+	margin: auto;
+}
+
+.spacer {
+	clear: both;
+	height: 20px;
+}
+
+.table-nav td {
+	padding: 10px;
+}
+
+.table-container table {
+	margin: auto;
+    width:100%;
+	max-width: 500px;
+	max-height: 250px;
+	display: block;
+	overflow-x: auto;
+    border: 1px solid #ddd;
+	border-spacing: 0;
+}
+
+#xml-table table {
+	width:100%;
+	max-width: none;
+	max-height: none;
+}
+
+.table-container th {
+	position: sticky;
+	left: 0;
+    font-weight: bold;
+    text-align: left;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    background: silver;
+    font-size: 14px;
+}
+
+.table-container td {
+    text-align: center;
+	border: 1px solid rgb(221, 221, 221);
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.table-nav {
+	margin: auto;
+	width: 80%;
+}
+
+.holder{
+	position:relative;
+}
+
+.hidden-text{
+	position:absolute;
+	left:0;
+	bottom:0;
+	right:0;
+	background:rgba(255,255,255, 0.7);
+	display:none;
+}
+
+.holder:hover .hidden-text{
+	display:block;
+}
+
+.slides {
+	position:relative;
+}
+
+#link {
+	display: block;
+    margin: 0 auto;
+}
+
+ol{
+	list-style: upper-alpha;
+}
+
+ul{
+	list-style: lower-alpha;
+}
+
+.numeric-list{
+	list-style: decimal;
+}
+
+a{
+	color: black;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: red;
+	text-decoration: underline;
+}
+
+h3 a:hover, a:active {
+	color: black;
+	text-decoration: none;
+}
+
+h2 a:hover, a:active {
+	color: black;
+	text-decoration: none;
+}
+
+#notify {
+	visibility: hidden;
+    position:fixed;
+    top:0;
+    right:0;
+    width:25%;
+    background-color:#FF7800;
+    padding:5px;
+	border-radius: 2%;
+}
+
+#notify span.dismiss {
+    border:2px solid #FFF;
+    padding:0 5px;
+    cursor:pointer;
+    margin-right:20px;
+    margin-bottom:20px;
+}
+
+#notify a {
+    color:white;
+    text-decoration:none;
+    font-weight:bold
+}
